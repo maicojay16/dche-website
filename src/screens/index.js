@@ -32,21 +32,21 @@ export default function Screen() {
             <Router>
                 <Header />
                     <div>
-                        <Route exact path={"/"} component={Home} />
-                        <Route exact path={"/visionandmission"} component={VisionAndMission} />
-                        <Route exact path={"/governingboard"} component={GoverningBoard} />
-                        <Route exact path={"/deanswelcome"} component={DeansWelcome} />
-                        <Route exact path={"/faculty"} component={Faculty} />
-                        <Route exact path={"/faculty/deleon"} component={FacultySolo} />
-                        <Route exact path={"/faculty/ocon"} component={FacultySolo2} />
-                        <Route exact path={"/faculty/aberilla"} component={FacultySolo3} />
-                        <Route exact path={"/staff"} component={Staff} />
-                        <Route exact path={"/students"} component={Student} />
-                        <Route exact path={"/alumni"} component={Alumni} />
-                        <Route exact path={"/researchlab"} component={ResearchLab} />
-                        <Route exact path={"/publications"} component={Publication} />
-                        <Route exact path={"/news"} component={News} />
-                        <Route exact path={"/events"} component={Events} />
+                        <Route exact path={"./"} component={Home} />
+                        <Route exact path={"./visionandmission"} component={VisionAndMission} />
+                        <Route exact path={"./governingboard"} component={GoverningBoard} />
+                        <Route exact path={"./deanswelcome"} component={DeansWelcome} />
+                        <Route exact path={"./faculty"} component={Faculty} />
+                        <Route exact path={"./faculty/deleon"} component={FacultySolo} />
+                        <Route exact path={"./faculty/ocon"} component={FacultySolo2} />
+                        <Route exact path={"./faculty/aberilla"} component={FacultySolo3} />
+                        <Route exact path={"./staff"} component={Staff} />
+                        <Route exact path={"./students"} component={Student} />
+                        <Route exact path={"./alumni"} component={Alumni} />
+                        <Route exact path={"./researchlab"} component={ResearchLab} />
+                        <Route exact path={"./publications"} component={Publication} />
+                        <Route exact path={"./news"} component={News} />
+                        <Route exact path={"./events"} component={Events} />
                         {/* <Redirect to={"/"} /> */}
                     </div>
                 <Footer />

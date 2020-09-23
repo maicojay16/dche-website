@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html --out-dir build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "clean": "rimraf dist .cache",
+    "predeploy": "npm run clean && parcel build index.html --public-url /dche-website",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Jay Maico",
@@ -24,6 +24,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-slick": "^0.27.10",
+    "rimraf": "^3.0.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
